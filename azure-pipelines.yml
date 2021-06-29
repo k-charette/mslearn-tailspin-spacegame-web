@@ -42,14 +42,22 @@ steps:
     projects: '**/*.csproj'
 
 - task: DotNetCoreCLI@2
+<<<<<<< HEAD
   displayName: 'Build the project - Release'
+=======
+  displayName: 'Build the project - ${buildConfiguration}'
+>>>>>>> 0605c2148d1e8b18e4c41ba5ce64da9b5b14908d
   inputs:
     command: 'build'
     arguments: '--no-restore --configuration ${buildConfiguration}'
     projects: '**/*.csproj'
 
 - task: DotNetCoreCLI@2
+<<<<<<< HEAD
   displayName: 'Publish the project - Release'
+=======
+  displayName: 'Publish the project - ${buildConfiguration}'
+>>>>>>> 0605c2148d1e8b18e4c41ba5ce64da9b5b14908d
   inputs:
     command: 'publish'
     projects: '**/*.csproj'
